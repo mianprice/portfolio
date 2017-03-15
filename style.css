@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+
+#footer {
+  height: 2.2em;
+  width: 100%;
+  background-color: lightgrey;
+  display: inline-block;
+}
+
+#footer > div {
+  float: left;
+  height: 2em;
+  font-family: sans-serif;
+  padding: 0.5em 0;
+}
+
+.half {
+  width: 49%;
+}
+
+.lefthalf {
+  text-align: right;
+}
+
+.righthalf {
+  text-align: left;
+}
+
+.and {
+  text-align: center;
+  width: 2%;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: lighter;
+}
