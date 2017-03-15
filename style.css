@@ -8,10 +8,11 @@ body {
 /* NAVBAR STYLING */
 /******************/
 #navbar {
-  width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
-
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  color:white;
 }
 .half {
   width: 50%;
@@ -19,10 +20,12 @@ body {
   height: 4em;
 }
 .nav-title {
-  width: 100%;
+  width: 80%;
   padding: 0.5em 0;
+  padding-left: 20%;
   text-align: center;
   vertical-align: middle;
+  opacity: 0;
 }
 .nav-title span {
   line-height: 1em;
@@ -31,30 +34,51 @@ body {
 #nav {
   margin: 0;
   padding: 0;
+  padding-right: 20%;
   list-style-type: none;
-  background-color: darkgrey;
 }
 #nav li {
   float:left;
   height: 4em;
   width: 30%;
-    text-align: center;
+  text-align: center;
   vertical-align: middle;
-  /*border:thin red dotted;*/
 }
 #home-nav {
   display:none;
 }
 #nav li:hover {
-  background-color: lightgrey;
+  background-color: grey;
 }
 #nav li a {
   font-family: sans-serif;
   text-decoration: none;
-  /*border: thin black solid;*/
   line-height: 1.75em;
   font-size: 12pt;
-  color: black;
+  color: white;
+}
+.invisible {
+  opacity:0;
+}
+
+/********************/
+/* HOME DIV STYLING */
+/********************/
+#home {
+  height: 100vh;
+  background-image: url("assets/milky_way.jpg");
+  background-size: cover;
+}
+#home div {
+  color: white;
+  text-align: center;
+}
+#name {
+  padding-top: 40vh;
+  font-size: 48pt;
+}
+#desired-title {
+  font-size: 36pt;
 }
 
 /******************/
