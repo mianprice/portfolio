@@ -1,9 +1,30 @@
+/***************************************************/
+/* TODO                                            */
+/* Responsive Design (Desktop breaks @ w=750px)    */
+/*                                                 */
+/*                                                 */
+/*                                                 */
+/***************************************************/
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
-
+.emph-text {
+  font-family: 'Roboto Slab', serif;
+}
+.section-wrapper {
+  height: 100vh;
+  width: 80vw;
+  padding-left: 10vw;
+  padding-right: 10vw
+}
+.parallax-window {
+  min-height: 60vh;
+  background: transparent;
+}
 /******************/
 /* NAVBAR STYLING */
 /******************/
@@ -12,62 +33,68 @@ body {
   top:0;
   left:0;
   width: 100%;
-  color:white;
+  color: white;
+  text-align: center;
 }
-.half {
-  width: 50%;
+.nav-wrapper {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   float: left;
-  height: 4em;
+  height: 6em;
 }
 .nav-title {
-  width: 80%;
   padding: 0.5em 0;
-  padding-left: 20%;
-  text-align: center;
-  vertical-align: middle;
-  opacity: 0;
-}
-.nav-title span {
   line-height: 1em;
   font-size: 36pt;
+  width: 41vw;
+  /*text-align:left;*/
+}
+.nav-link {
+  line-height: 1em;
+  /*padding-bottom: 1.5em;*/
+  padding-top: 3.5em;
+  width: 13vw;
+  /*text-align: center;*/
+}
+li.current a div {
+  border: 6px solid transparent;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  border-style: solid;
+  -webkit-border-image: -webkit-linear-gradient(right, white, grey, white) 50% 5% stretch;
+  -moz-border-image: -moz-linear-gradient(right, white, grey, white) 50% 5% stretch;
+  -o-border-image: -o-linear-gradient(right, white, grey, white) 50% 5% stretch;
+  border-image: linear-gradient(right, white, grey, white) 50% 5% stretch;
+}
+li.current a div.nav-link {
+  padding-bottom: 0.5em
+}
+li.current a div.nav-title {
+  padding-bottom: 0.125em
 }
 #nav {
   margin: 0;
   padding: 0;
-  padding-right: 20%;
   list-style-type: none;
 }
 #nav li {
   float:left;
-  height: 4em;
-  width: 30%;
   text-align: center;
-  vertical-align: middle;
-}
-#home-nav {
-  display:none;
-}
-#nav li:hover {
-  background-color: grey;
 }
 #nav li a {
-  font-family: sans-serif;
   text-decoration: none;
-  line-height: 1.75em;
   font-size: 12pt;
   color: white;
 }
-.invisible {
-  opacity:0;
-}
+
 
 /********************/
 /* HOME DIV STYLING */
 /********************/
 #home {
   height: 100vh;
-  background-image: url("assets/milky_way.jpg");
-  background-size: cover;
 }
 #home div {
   color: white;
@@ -78,7 +105,29 @@ body {
   font-size: 48pt;
 }
 #desired-title {
+  padding-top: 40vh;
   font-size: 36pt;
+}
+
+/*********************/
+/* ABOUT DIV STYLING */
+/*********************/
+#about {
+  background-color: lightblue;
+}
+
+/************************/
+/* PROJECTS DIV STYLING */
+/************************/
+#projects {
+  background-color: lavender;
+}
+
+/***********************/
+/* CONTACT DIV STYLING */
+/***********************/
+#contact {
+  background-color: lightgreen;
 }
 
 /******************/
