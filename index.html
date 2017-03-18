@@ -11,15 +11,11 @@
   </head>
   <body>
     <!-- Navbar -->
+    <div id="nav-blur"></div>
     <div id="navbar">
-      <!-- <div class="half">
-        <div class="nav-title emph-text">
-          <span>Ian Price</span>
-        </div>
-      </div> -->
       <div class="nav-wrapper emph-text">
         <ul id="nav">
-          <li><a class="current" href="#home"><div class="nav-title">Ian Price</div></a></li>
+          <li class="current"><a href="#home"><div class="nav-title">Ian Price</div></a></li>
           <li><a href="#about"><div class="nav-link">About</div></a></li>
           <li><a href="#projects"><div class="nav-link">Projects</div></a></li>
           <li><a href="#contact"><div class="nav-link">Contact</div></a></li>
@@ -29,42 +25,98 @@
     </div>
     <!-- Title Section -->
     <!-- Parallax Window -->
-    <div id="home" class="parallax-window" data-parallax="scroll" data-image-src="assets/nasa-night.jpg">
+    <div id="home" class="parallax-window emph-text" data-parallax="scroll" data-image-src="assets/nasa-night.jpg">
       <div id="desired-title"><span>Full-Stack Developer</span></div>
     </div>
     <!-- About Section -->
-    <div id="about">
+    <div id="about" class="content-window cf">
       <div class="section-wrapper">
-
+        <div class="section-header emph-text">About Me</div>
+        <div class="section-body">
+          Nulla facilisi cras fermentum odio eu. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Iaculis eu non diam phasellus vestibulum. Viverra vitae congue eu consequat ac felis donec. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Neque vitae tempus quam pellentesque. Elementum pulvinar etiam non quam. Est ultricies integer quis auctor elit sed vulputate mi sit. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Suspendisse faucibus interdum posuere lorem ipsum dolor. Arcu felis bibendum ut tristique et egestas. In iaculis nunc sed augue. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. In egestas erat imperdiet sed.
+        </div>
+        <div class="section-header emph-text">
+          Skills
+        </div>
+        <div class="section-half-wrapper">
+          <div class="sub-section-header">
+            Current
+          </div>
+          <div class="section-body iconset">
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+          </div>
+        </div>
+        <div class="section-half-wrapper">
+          <div class="sub-section-header">
+            Future
+          </div>
+          <div class="section-body iconset">
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Parallax Window -->
     <div class="parallax-window" data-parallax="scroll" data-image-src="assets/nasa-night.jpg"></div>
     <!-- Projects Section -->
-    <div id="projects">
+    <div id="projects" class="content-window cf">
       <div class="section-wrapper">
-
+        <div class="section-header emph-text">Projects &amp; Progress</div>
       </div>
     </div>
     <!-- Parallax Window -->
     <div class="parallax-window" data-parallax="scroll" data-image-src="assets/nasa-night.jpg"></div>
     <!-- Contact Section -->
-    <div id="contact">
+    <div id="contact" class="content-window cf">
       <div class="section-wrapper">
-
+        <div class="section-header emph-text">Get in Touch</div>
+        <div class="section-half-wrapper">
+          <div class="sub-section-header">
+            Find Me Online
+          </div>
+          <div class="section-body iconset">
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+            <a><img class="icon" src="http://placehold.it/200x200"></a>
+          </div>
+        </div>
+        <div class="section-half-wrapper">
+          <div class="sub-section-header">
+            Message Me
+          </div>
+          <div class="section-body message-form">
+            <input type="text" name="name" placeholder="Name: ">
+            <input type="text" name="email" placeholder="Email">
+            <textarea name="message" rows="10" placeholder="Enter message here:"></textarea>
+            <button id="send-message" type="button">Send</button>
+          </div>
+        </div>
       </div>
+      <div class="parallax-window" data-parallax="scroll" data-image-src="assets/nasa-night.jpg"></div>
     </div>
+    <!-- Parallax Window -->
+
     <!-- Footer -->
     <div id="footer">
-      <div class="half lefthalf">
-        <span>Built by Ian Price</span>
+      <div class="section-half-wrapper c-info">
+        <span>Ian Price &copy; 2017</span>
       </div>
-      <div class="and">
-        <span> || </span>
-      </div>
-      <div class="half righthalf">
-        <span>&copy; 2017</span>
-      </div>
+      <a href="#home">
+        <div class="section-half-wrapper to-top">Back to top &#8682;</div>
+      </a>
     </div>
   </body>
 </html>
