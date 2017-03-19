@@ -23,7 +23,6 @@ body {
 /* SCAFFOLDING */
 /***************/
 .section-wrapper {
-  /*height: 100vh;*/
   width: 80%;
   padding-left: 10%;
   padding-right: 10%;
@@ -31,8 +30,6 @@ body {
 .section-half-wrapper {
   float: left;
   width: 50%;
-  /*padding-left: 5%;
-  padding-right: 5%;*/
 }
 .section-header {
   width: 100%;
@@ -52,12 +49,6 @@ body {
   font-size: 12pt;
   padding: 0.25em 3em;
 }
-.gutter-half {
-  width: 2%;
-  margin: 1%;
-  background-color: rgba(50,50,50,0.5);
-  float: left;
-}
 
 /************************/
 /* CONTENT ORGANIZATION */
@@ -67,8 +58,7 @@ body {
   background: transparent;
 }
 .content-window {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
   background-color: rgba(146,186,225,0.7);
   /*negative margin and positive padding (=height of navbar) needed*/
 }
@@ -138,9 +128,6 @@ li.current a div.nav-link {
 li.current a div.nav-link {
   padding-bottom: 0.375em
 }
-li.current a div.nav-title {
-  padding-bottom: 0.125em
-}
 #nav {
   margin: 0;
   padding: 0;
@@ -163,15 +150,9 @@ li.current a div.nav-title {
 #home {
   height: 100vh;
 }
-#home div {
+#desired-title {
   color: white;
   text-align: center;
-}
-#name {
-  padding-top: 40vh;
-  font-size: 48pt;
-}
-#desired-title {
   padding-top: 40vh;
   font-size: 36pt;
 }
@@ -218,13 +199,16 @@ li.current a div.nav-title {
   background-color: rgba(146,186,225,0.7);
   border-color: black;
 }
+#contact {
+  height: 100vh;
+  padding-bottom: 0
+}
 
 /******************/
 /* FOOTER STYLING */
 /******************/
 #footer {
-  border-top: solid black 5px;
-  width: 100%;
+  clear: left;
 }
 #footer div.section-half-wrapper {
   padding: 0.5em 0;
@@ -244,9 +228,9 @@ li.current a div.nav-title {
 .to-top a {
   text-decoration: none;
 }
-#special {
+/*#special {
   height:15vh
-}
+}*/
 
 /************/
 /* CLEARFIX */
@@ -258,4 +242,33 @@ li.current a div.nav-title {
 }
 .cf:after {
     clear: both;
+}
+
+/**************/
+/* RESPONSIVE */
+/**************/
+@media  (max-width: 750px) {
+  .section-half-wrapper {
+    width: 100%;
+  }
+  #navbar {
+    height: 125px;
+  }
+  #nav-blur {
+    height: 125px;
+  }
+  .nav-title {
+    width: 80vw;
+  }
+  .nav-link {
+    padding-top: 0;
+    width: 26vw;
+  }
+  li.current a div.nav-link {
+    padding-bottom: 0.375em
+  }
+  .content-window {
+    padding: 125px 0;
+    /*margin-top: 125px;*/
+  }
 }
