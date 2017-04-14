@@ -1,11 +1,3 @@
-/***************************************************/
-/* TODO                                            */
-/* Responsive Design (Desktop breaks @ w=750px)    */
-/*                                                 */
-/*                                                 */
-/*                                                 */
-/***************************************************/
-
 /**********/
 /* GLOBAL */
 /**********/
@@ -160,9 +152,23 @@ li.current a div.nav-link {
 /*********************/
 /* ABOUT DIV STYLING */
 /*********************/
-/*#about {
+#toolkit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.tool {
+  padding: 20px;
+  margin: 5px;
   background-color: white;
-}*/
+  color: rgb(146,186,225);
+  border-radius: 10px;
+  text-align:center;
+  font-size:110%;
+
+}
 
 
 /************************/
