@@ -54,7 +54,7 @@ body {
   background-color: rgba(146,186,225,0.7);
   /*negative margin and positive padding (=height of navbar) needed*/
 }
-.iconset {
+/*.iconset {
   text-align: center;
   padding: 0;
   margin: 0;
@@ -63,7 +63,7 @@ body {
   border-radius: 50%;
   width: 25%;
   padding: 2%;
-}
+}*/
 
 /******************/
 /* NAVBAR STYLING */
@@ -160,10 +160,10 @@ li.current a div.nav-link {
 }
 
 .tool {
-  padding: 20px;
+  padding: 10px;
   margin: 5px;
-  background-color: white;
-  color: rgb(146,186,225);
+  background-color: black;
+  color: white;
   border-radius: 10px;
   text-align:center;
   font-size:110%;
@@ -208,6 +208,23 @@ li.current a div.nav-link {
 #contact {
   height: 100vh;
   padding-bottom: 0
+}
+
+#online-presence {
+  /*display: flex;
+  flex-wrap: wrap;
+  justify-content: center;*/
+}
+
+.presence {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  text-align:center;
+  font-size:110%;
+  width: 100%;
 }
 
 /******************/
