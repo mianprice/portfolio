@@ -43,7 +43,7 @@ body {
 /* CONTENT ORGANIZATION */
 /************************/
 .parallax-window {
-  height: 60vh;
+  height: 50vh;
   background: transparent;
 }
 .content-window {
@@ -126,13 +126,15 @@ li.current a div.nav-link {
 /* HOME DIV STYLING */
 /********************/
 #home {
-  max-height: 100vh;
-  padding-top: 40vh;
+  min-height: 100vh;
+  /*padding-top: 40vh;*/
+  /*margin-top: 100px;*/
 }
 #desired-title {
   color: white;
   text-align: center;
   font-size: 36pt;
+  padding-top: 40vh;
 }
 
 /*********************/
@@ -296,12 +298,13 @@ li.current a div.nav-link {
 #footer {
   align-self: baseline;
   width: 100%;
+  padding-bottom: 0;
 }
 #footer div.section-half-wrapper {
   padding: 0.5em 0;
-  background-color: rgba(146,186,225,0.7);
+  background-color: rgba(146,186,225,1);
 }
-.c-info {
+#c-info {
   text-align: center;
 }
 .to-top {
@@ -314,18 +317,6 @@ li.current a div.nav-link {
 }
 .to-top a {
   text-decoration: none;
-}
-
-/************/
-/* CLEARFIX */
-/************/
-.cf:before,
-.cf:after {
-    content: " ";
-    display: table;
-}
-.cf:after {
-    clear: both;
 }
 
 /**************/
