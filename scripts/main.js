@@ -1,8 +1,13 @@
 var changed = false;
 
-$(function() {
-  var footer_height = $(window).height() - $('#contact').outerHeight() - $('#navbar').height() - $('#c-info').outerHeight();
-  $('.spacer').height(footer_height);
+$(window).load(() => {
+  var x = $(window).width() > 750 ? 0 : 0;
+  var h = $(window).height() - $('#contact').outerHeight() - $('#c-info').outerHeight() - $('#nav-blur').height();
+  if ($(window).width() < 750) {
+    h = h - $('#c-info').outerHeight();
+  }
+  h = h <= 0 ? 300 : h;
+  $('.spacer').height(h);
   $("#nav").onePageNav({
     currentClass: 'current',
     changeHash: false,

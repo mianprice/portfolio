@@ -53,7 +53,7 @@ body {
   background: rgba(0,0,0,0.5);
   padding-bottom: 2vw;
   width: 90vw;
-  margin: 0 5vw;
+  margin: 0 5vmin;
   /*z-index: 1;*/
 }
 
@@ -199,7 +199,6 @@ li.current a div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /*align-items: space-around;*/
   margin-bottom: 2vw;
 
 }
@@ -208,21 +207,17 @@ li.current a div {
 }
 .pd-even > .project-info {
   order: 1;
-  background-color: rgba(146,186,225,0.5);
-  background-color; rgb(146,186,225);
 }
 .pd-odd > .img-contain {
   order: 1;
 }
 .pd-odd > .project-info {
   order: 0;
-  background-color: rgba(128,128,128,0.5);
-  background-color; rgb(128,128,128);
 }
 .img-contain {
   width:43vw;
-  background-color: rgba(255,255,255,0.7);
-  background-color; rgb(255,255,255);
+  background-color: rgba(128,128,128,0.5);
+  background-color; rgb(128,128,128);
 }
 .project-image {
   width: 39vw;
@@ -231,6 +226,8 @@ li.current a div {
 .project-info {
   width:43vw;
   text-align: center;
+  background-color: rgba(146,186,225,0.5);
+  background-color; rgb(146,186,225);
 }
 .project-links {
   width: 100%;
@@ -258,7 +255,7 @@ li.current a div {
 #other-projects {
   width: 50%;
   margin: 0 25%;
-  padding: 10px;
+  padding: 10px 0;
   color: white;
   border-radius: 10px;
   text-align:center;
@@ -278,14 +275,18 @@ li.current a div {
   padding-bottom: 2vw;
 }
 #contact > .section-wrapper {
-  margin: 0 2vw;
+  padding: 0 2vmin;
 }
 #contact > .section-wrapper > .section-body {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+#contact > .section-wrapper > .section-body > a {
+  text-decoration: none;
+}
+
 .message-form {
   width:100%;
   text-align: center;
@@ -311,15 +312,24 @@ li.current a div {
   border-color: black;
 }
 
-.presence {
+.presence:nth-child(1n+1) {
   background-color: rgba(146,186,225,0.7);
   color: white;
   border-radius: 10px;
   text-align:center;
-  font-size:110%;
-  width: 20vw;
-  height: 20vw;
+  width: 100%;
+  padding: 0;
+}
 
+.presence > div {
+  clear: left;
+  padding-bottom: 1em;
+}
+
+.presence > i {
+  float:left;
+  font-size: 10vmin;
+  padding: 2vmin 5vmin;
 }
 
 /******************/
@@ -360,18 +370,33 @@ li.current a div {
   }
   #nav-blur {
     height: 125px;
+    background: -moz-linear-gradient(top,rgba(146,186,225,1),rgba(146,186,225,0.7));
+    background: -webkit-linear-gradient(top,rgba(146,186,225,1),rgba(146,186,225,0.7));
+    background: -ms-linear-gradient(top,rgba(146,186,225,1),rgba(146,186,225,0.7));
+    background: -o-linear-gradient(top,rgba(146,186,225,1),rgba(146,186,225,0.7));
+    background: linear-gradient(to bottom,rgba(146,186,225,1),rgba(146,186,225,0.7));
   }
   .nav-title {
+    padding-top: 0;
     width: 80vw;
   }
   .nav-link {
-    padding-top: 0;
+    padding: 0;
     width: 26vw;
   }
-  li.current a div.nav-link {
-    padding-bottom: 0.375em
+  .img-contain {
+    display: none;
   }
-  .content-window {
-    padding: 125px 0;
+  .project-info {
+    width: 100%;
+  }
+  #contact > .section-wrapper > .section-body {
+    flex-wrap: wrap;
+  }
+  .presence {
+    margin: 2vmin 0;
+  }
+  .presence > i {
+    font-size: 20vmin;
   }
 }
