@@ -105,7 +105,8 @@ body {
   width: 13vw;
 }
 li.current a div {
-  background-color: rgba(128,128,128,0.7);
+  background-color: rgb(50,50,50);
+  background-color: rgba(50,50,50,0.8);
 }
 #nav {
   margin: 0;
@@ -190,6 +191,7 @@ li.current a div {
 }
 
 .tool-future {
+  display: none;
   background-color: rgb(128,128,128);
   background-color: rgba(128,128,128,0.7);
 }

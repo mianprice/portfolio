@@ -22,5 +22,8 @@ $(window).load(() => {
   $("#back-top").on('click', (e) => {
     e.preventDefault();
     $(".nav-title").trigger('click');
+  });
+  $('#resume').on('click', (event) => {
+    event.preventDefault();
   })
 });
