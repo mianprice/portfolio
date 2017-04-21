@@ -54,6 +54,8 @@ body {
   padding-bottom: 2vw;
   width: 90vw;
   margin: 0 5vmin;
+  border-radius: 2vmin;
+
   /*z-index: 1;*/
 }
 
@@ -151,6 +153,8 @@ li.current a div {
 #title > .emph-text {
   background-color: rgba(0,0,0,0.7);
   padding: 5vmin;
+  border-radius: 2vmin;
+
 }
 
 /*********************/
@@ -181,21 +185,22 @@ li.current a div {
 }
 
 .tool-current {
-  background-color: black;
+  background-color: rgb(146,186,225);
+  background-color: rgba(146,186,225,0.7);
 }
 
 .tool-future {
   background-color: rgb(128,128,128);
   background-color: rgba(128,128,128,0.7);
-
 }
 
 
 /************************/
 /* PROJECTS DIV STYLING */
 /************************/
-#projects {
-
+#projects .tool {
+  background-color: rgb(50,50,50);
+  background-color: rgba(50,50,50,0.8);
 }
 .project-display {
   padding: 0;
