@@ -32,7 +32,7 @@ body {
   width: 100%;
   text-align: center;
   font-size: 24pt;
-  padding: 0.5em 0;
+  padding: 0.7em 0;
 }
 .sub-section-header {
   width: 100%;
@@ -50,7 +50,7 @@ body {
 /* CONTENT ORGANIZATION */
 /************************/
 .content-window {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
   padding-bottom: 2vw;
   width: 90vw;
   margin: 0 5vmin;
@@ -68,11 +68,11 @@ body {
   width: 100%;
   height: 100px;
   z-index: 99;
-  background: -moz-linear-gradient(top,rgba(146,186,225,1),rgba(146,186,225,0.5));
-  background: -webkit-linear-gradient(top,rgba(146,186,225,1),rgba(146,186,225,0.5));
-  background: -ms-linear-gradient(top,rgba(146,186,225,1),rgba(146,186,225,0.5));
-  background: -o-linear-gradient(top,rgba(146,186,225,1),rgba(146,186,225,0.5));
-  background: linear-gradient(to bottom,rgba(146,186,225,1),rgba(146,186,225,0.5));
+  background: -moz-linear-gradient(top,rgba(146,186,225,1),rgba(146,186,225,0.7));
+  background: -webkit-linear-gradient(top,rgba(146,186,225,1),rgba(146,186,225,0.7));
+  background: -ms-linear-gradient(top,rgba(146,186,225,1),rgba(146,186,225,0.7));
+  background: -o-linear-gradient(top,rgba(146,186,225,1),rgba(146,186,225,0.7));
+  background: linear-gradient(to bottom,rgba(146,186,225,1),rgba(146,186,225,0.7));
 }
 #navbar {
   position: fixed;
@@ -82,7 +82,7 @@ body {
   height: 100px;
   z-index: 100;
   text-align: center;
-  box-shadow: 0 1px 10px 3px rgba(0,0,0,0.5);
+  box-shadow: 0 1px 10px 3px rgba(0,0,0,0.7);
 }
 .nav-wrapper {
   width: 80vw;
@@ -103,7 +103,7 @@ body {
   width: 13vw;
 }
 li.current a div {
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(128,128,128,0.7);
 }
 #nav {
   margin: 0;
@@ -124,7 +124,7 @@ li.current a div {
 /* BACKGROUND STYLING */
 /**********************/
 #background {
-  background-image: url(assets/wood-slats-color.jpg);
+  background-image: url(assets/cityscape-color.jpg);
   position: fixed;
   left: 0;
   top: 0;
@@ -132,6 +132,7 @@ li.current a div {
   height: 100vh;
   width: 100vw;
   background-position: center;
+  background-size: cover;
 }
 
 
@@ -147,6 +148,10 @@ li.current a div {
   justify-content: center;
   align-items: center;
 }
+#title > .emph-text {
+  background-color: rgba(0,0,0,0.7);
+  padding: 5vmin;
+}
 
 /*********************/
 /* ABOUT DIV STYLING */
@@ -160,7 +165,7 @@ li.current a div {
   grid-row: 1;
   grid-column: 2;
 }
-#toolkit {
+.toolkit {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -181,7 +186,7 @@ li.current a div {
 
 .tool-future {
   background-color: rgb(128,128,128);
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(128,128,128,0.7);
 
 }
 
@@ -216,7 +221,7 @@ li.current a div {
 }
 .img-contain {
   width:43vw;
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(128,128,128,0.7);
   background-color; rgb(128,128,128);
 }
 .project-image {
@@ -224,9 +229,10 @@ li.current a div {
   margin: 2vw;
 }
 .project-info {
-  width:43vw;
+  width:39vw;
+  padding: 2vw;
   text-align: center;
-  background-color: rgba(146,186,225,0.5);
+  background-color: rgba(146,186,225,0.7);
   background-color; rgb(146,186,225);
 }
 .project-links {
@@ -238,13 +244,17 @@ li.current a div {
   margin-bottom: 1em;
 }
 .project-link {
+  width: 30vmin;
+  font-size: 120%;
   padding: 7px;
   margin: 5px;
   color: white;
   border-radius: 10px;
+  align-self: flex-end;
   text-align:center;
   font-size:90%;
-  background-color: black;
+  background-color: rgb(50,50,50);
+  background-color: rgba(50,50,50,0.8);
 }
 #projects > .sub-section-header {
   width: 100%;
@@ -263,7 +273,7 @@ li.current a div {
 }
 
 #other-projects:hover {
-  background-color: rgba(128,128,128,0.5);
+  background-color: rgba(128,128,128,0.7);
 }
 
 /***********************/
@@ -295,7 +305,7 @@ li.current a div {
 .message-form > input,textarea {
   width: 100%;
   box-sizing:border-box;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.7em;
   font-size: 12pt;
 }
 #send-message {
@@ -340,7 +350,7 @@ li.current a div {
   padding-bottom: 0;
 }
 #footer div.section-half-wrapper {
-  padding: 0.5em 0;
+  padding: 0.7em 0;
   background-color: rgba(146,186,225,1);
 }
 #c-info {
