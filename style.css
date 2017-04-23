@@ -283,6 +283,13 @@ li.current a div {
   background-color: rgba(128,128,128,0.7);
 }
 
+.project-display a {
+  text-decoration: none;
+}
+.project-display .section-header {
+  padding: 0;
+}
+
 /***********************/
 /* CONTACT DIV STYLING */
 /***********************/
