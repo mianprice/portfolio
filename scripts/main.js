@@ -23,7 +23,4 @@ $(window).load(() => {
     e.preventDefault();
     $(".nav-title").trigger('click');
   });
-  $('#resume').on('click', (event) => {
-    event.preventDefault();
-  })
 });
