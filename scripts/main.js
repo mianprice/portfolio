@@ -6,7 +6,7 @@ $(window).load(() => {
   if ($(document).width() < 750) {
     h = h - $('#c-info').outerHeight();
   }
-  h = h <= 0 ? 300 : h;
+  h = h <= 100 ? 100 : h;
   $('.spacer').height(h);
   $("#nav").onePageNav({
     currentClass: 'current',
