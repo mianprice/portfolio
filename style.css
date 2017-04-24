@@ -55,8 +55,6 @@ body {
   width: 90vw;
   margin: 0 5vmin;
   border-radius: 2vmin;
-
-  /*z-index: 1;*/
 }
 
 
@@ -230,10 +228,14 @@ li.current a div {
   width:43vw;
   background-color: rgba(128,128,128,0.7);
   background-color; rgb(128,128,128);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .project-image {
-  width: 39vw;
-  margin: 2vw;
+  width: 80%;
+  margin: 10%;
 }
 .project-info {
   width:39vw;
@@ -258,8 +260,8 @@ li.current a div {
   color: white;
   border-radius: 10px;
   align-self: flex-end;
-  text-align:center;
-  font-size:90%;
+  text-align: center;
+  font-size: 90%;
   background-color: rgb(50,50,50);
   background-color: rgba(50,50,50,0.8);
 }
@@ -385,7 +387,7 @@ li.current a div {
 /**************/
 /* RESPONSIVE */
 /**************/
-@media only screen and (max-device-width: 750px) {
+@media only screen and (max-device-width: 750px), only screen and (max-width: 750px) {
   .section-half-wrapper {
     width: 100%;
   }
@@ -406,10 +408,19 @@ li.current a div {
   }
   .nav-link {
     padding: 0;
+    padding-bottom: 10px;
     width: 26vw;
   }
+  .pd-even > .img-contain {
+    order: 1;
+  }
+  .pd-even > .project-info {
+    order: 0;
+  }
   .img-contain {
-    display: none;
+    width: 100%;
+    background-color: rgba(128,128,128,0.7);
+    background-color; rgb(128,128,128);
   }
   .project-info {
     width: 100%;
@@ -422,5 +433,19 @@ li.current a div {
   }
   .presence > i {
     font-size: 20vmin;
+  }
+  .section-header {
+    font-size: 20pt;
+  }
+  .section-wrapper {
+    font-size: 12pt ;
+  }
+  #title {
+    font-size: 24pt;
+  }
+}
+@media only screen and (max-device-width: 350px), only screen and (max-width: 350px) {
+  .nav-title {
+    font-size: 50px;
   }
 }
