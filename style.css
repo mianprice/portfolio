@@ -387,7 +387,7 @@ li.current a div {
 /**************/
 /* RESPONSIVE */
 /**************/
-@media only screen and (max-device-width: 750px), only screen and (max-width: 750px) {
+@media (max-device-width: 750px), (max-width: 750px) {
   .section-half-wrapper {
     width: 100%;
   }
@@ -435,7 +435,7 @@ li.current a div {
     margin: 2vmin 0;
   }
 }
-@media only screen and (max-device-width: 500px), only screen and (max-width: 500px) {
+@media (max-device-width: 500px), (max-width: 500px) {
    .section-header {
      font-size: 24pt;
    }
@@ -446,7 +446,7 @@ li.current a div {
      font-size: 24pt;
    }
 }
-@media only screen and (max-device-width: 350px), only screen and (max-width: 350px) {
+@media (max-device-width: 350px), (max-width: 350px) {
   .nav-title {
     font-size: 50px;
   }
