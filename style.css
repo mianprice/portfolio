@@ -385,7 +385,7 @@ li.current a div {
 /**************/
 /* RESPONSIVE */
 /**************/
-@media  (max-width: 750px) {
+@media only screen and (max-device-width: 750px) {
   .section-half-wrapper {
     width: 100%;
   }
