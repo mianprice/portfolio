@@ -428,21 +428,23 @@ li.current a div {
   #contact > .section-wrapper > .section-body {
     flex-wrap: wrap;
   }
-  .presence {
-    margin: 2vmin 0;
-  }
   .presence > i {
     font-size: 20vmin;
   }
-  .section-header {
-    font-size: 20pt;
+  .presence {
+    margin: 2vmin 0;
   }
-  .section-wrapper {
-    font-size: 12pt ;
-  }
-  #title {
-    font-size: 24pt;
-  }
+}
+@media only screen and (max-device-width: 500px), only screen and (max-width: 500px) {
+   .section-header {
+     font-size: 24pt;
+   }
+   .section-wrapper {
+     font-size: 12pt ;
+   }
+   #title {
+     font-size: 24pt;
+   }
 }
 @media only screen and (max-device-width: 350px), only screen and (max-width: 350px) {
   .nav-title {
