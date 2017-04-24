@@ -1,3 +1,4 @@
+
 /**********/
 /* GLOBAL */
 /**********/
@@ -417,7 +418,7 @@ li.current a div {
   .pd-even > .project-info {
     order: 0;
   }
-  .img-contain {
+.img-contain {
     width: 100%;
     background-color: rgba(128,128,128,0.7);
     background-color; rgb(128,128,128);
@@ -428,21 +429,23 @@ li.current a div {
   #contact > .section-wrapper > .section-body {
     flex-wrap: wrap;
   }
-  .presence {
-    margin: 2vmin 0;
-  }
   .presence > i {
     font-size: 20vmin;
   }
-  .section-header {
-    font-size: 20pt;
+  .presence {
+    margin: 2vmin 0;
   }
-  .section-wrapper {
-    font-size: 12pt ;
-  }
-  #title {
-    font-size: 24pt;
-  }
+}
+@media only screen and (max-device-width: 500px), only screen and (max-width: 500px) {
+   .section-header {
+     font-size: 24pt;
+   }
+   .section-wrapper {
+     font-size: 12pt ;
+   }
+   #title {
+     font-size: 24pt;
+   }
 }
 @media only screen and (max-device-width: 350px), only screen and (max-width: 350px) {
   .nav-title {
