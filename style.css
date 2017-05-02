@@ -263,8 +263,8 @@ li.current a div {
   align-self: flex-end;
   text-align: center;
   font-size: 90%;
-  background-color: rgb(50,50,50);
-  background-color: rgba(50,50,50,0.8);
+  background-color: rgb(0, 15, 78);
+  background-color: rgba(0, 15, 78,0.8);
 }
 #projects > .sub-section-header {
   width: 100%;
