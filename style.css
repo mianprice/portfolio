@@ -1,4 +1,3 @@
-
 /**********/
 /* GLOBAL */
 /**********/
@@ -57,7 +56,6 @@ body {
   margin: 0 5vw;
   border-radius: 2vmin;
 }
-
 
 /******************/
 /* NAVBAR STYLING */
@@ -137,7 +135,6 @@ li.current a div {
   background-size: cover;
 }
 
-
 /*********************/
 /* TITLE DIV STYLING */
 /*********************/
@@ -154,7 +151,6 @@ li.current a div {
   background-color: rgba(0,0,0,0.7);
   padding: 5vmin;
   border-radius: 2vmin;
-
 }
 
 /*********************/
@@ -183,12 +179,10 @@ li.current a div {
   text-align:center;
   font-size:110%;
 }
-
 .tool-current {
   background-color: rgb(146,186,225);
   background-color: rgba(146,186,225,0.7);
 }
-
 .tool-future {
   display: none;
   background-color: rgb(128,128,128);
@@ -211,7 +205,6 @@ li.current a div {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 2vw;
-
 }
 .pd-even > .img-contain {
   order: 0;
@@ -291,11 +284,9 @@ li.current a div {
   text-align:center;
   background-color: rgba(146,186,225,0.7);
 }
-
 #other-projects:hover {
   background-color: rgba(128,128,128,0.7);
 }
-
 .project-display a {
   text-decoration: none;
 }
@@ -323,7 +314,6 @@ li.current a div {
 #contact > .section-wrapper > .section-body > a {
   text-decoration: none;
 }
-
 .message-form {
   width:100%;
   text-align: center;
@@ -391,7 +381,6 @@ li.current a div {
 .to-top:hover {
   color: white;
   cursor: pointer;
-
 }
 .to-top a {
   text-decoration: none;
