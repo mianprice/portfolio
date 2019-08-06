@@ -1,8 +1,3 @@
-# [Portfolio](http://ianprice.co)
+# [Portfolio](https://ianprice.dev)
 
 ## Technologies Used
-* HTML5
-* CSS3
-* jQuery (with OnePageNav plugin)
-
-![Portfolio](./assets/portfolio_screenshot.jpg)
