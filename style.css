@@ -1,0 +1,201 @@
+/* RESETS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: Heroic_Condensed;
+    src: url("assets/fonts/heroic/HeroicCondensedBoldOblique.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url("assets/fonts/quicksand/Quicksand-Regular.otf") format("opentype");
+}
+
+/* HEADER */
+
+.header_layer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    background:transparent;
+    padding-top: 5vh;
+    padding-left: 10vw;
+    padding-right: 10vw; 
+    height: 20vh;
+    max-height: 20vh;
+    width: 100vw;
+    z-index: 4;
+}
+.header_links {
+    
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    align-content: baseline;
+}
+
+.header_link {
+    font-family: 'Heroic_Condensed', sans-serif;
+    font-size: 10vh;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.header_hero {
+    
+}
+
+/* BODY */
+
+.content_layer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color:white;
+    font-family: 'Quicksand', sans-serif;
+    background: transparent;
+    font-size: 4vh;
+    padding-top: 20vh;
+    padding-left: 20vw;
+    padding-right: 20vw; 
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+}
+
+.content_title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14vh;
+}
+
+.content_tagline {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 11vh;
+}
+
+/* SKILLS */
+
+.skills {
+
+}
+
+.skill_header {
+
+}
+
+.skill {
+
+}
+
+/* PROJECTS */
+
+.projects {
+
+}
+
+.project_header {
+
+}
+
+.project {
+
+}
+
+.project_name {
+
+}
+
+.project_description {
+
+}
+
+.project_skills {
+
+}
+
+.project_image {
+
+}
+
+.project_group {
+
+}
+
+/* SPRITES */
+
+.sprite_layer {
+
+}
+
+/* BACKGROUND */
+
+.background_layer {
+    /* background-color: black; */
+    background-image: url("assets/shapes/Top.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    position: ;
+
+}
+
+body {
+    background-color: black;
+}
+
+/* RESPONSIVE */ 
