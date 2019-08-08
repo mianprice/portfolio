@@ -178,12 +178,21 @@ table {
 
 /* SKILLS */
 
-.skills {
-    padding-top: 100vh;
+.skill_header1 {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
 }
 
-.skill_header {
+.skill_header2 {
+    font-size: 36px;
+    width: 100%;
+    letter-spacing: 10px;
+    text-align: center;
+}
 
+.skills {
+    padding-top: 100vh;
 }
 
 .skill {
