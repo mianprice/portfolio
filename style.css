@@ -51,8 +51,13 @@ table {
 /* FONTS */
 
 @font-face {
-    font-family: Heroic_Condensed;
+    font-family: Heroic_Condensed_Oblique;
     src: url("assets/fonts/heroic/HeroicCondensedBoldOblique.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Heroic_Condensed;
+    src: url("assets/fonts/heroic/HeroicCondensedLight.otf") format("opentype");
 }
 
 @font-face {
@@ -86,10 +91,10 @@ table {
 }
 
 .header_link {
-    font-family: 'Heroic_Condensed', sans-serif;
-    font-size: 10vh;
-    margin-left: 25px;
-    margin-right: 25px;
+    font-family: 'Heroic_Condensed_Oblique', sans-serif;
+    font-size: 36px;
+    margin-left: 75px;
+    margin-right: 75px;
 }
 
 .header_hero {
@@ -107,8 +112,8 @@ table {
     background: transparent;
     font-size: 4vh;
     padding-top: 20vh;
-    padding-left: 20vw;
-    padding-right: 20vw; 
+    padding-left: 10vw;
+    padding-right: 10vw; 
     height: 100vh;
     width: 100vw;
     z-index: 3;
@@ -116,18 +121,65 @@ table {
 
 .content_title {
     font-family: 'Quicksand', sans-serif;
-    font-size: 14vh;
+    font-size: 160px;
+    padding-top: 7vh;
+    color: white;
+    text-align: center;
+    text-shadow: -20px 10px 40px rgba(0,0,0,0.1), -20px 10px 30px rgba(0,0,0,0.3), -20px 10px 20px rgba(0,0,0,0.5), -20px 10px 10px rgba(0,0,0,0.7), 0 0 40px rgba(97,236,243,0.1), 0 0 30px rgba(97,236,243,0.3), 0 0 20px rgba(97,236,243,0.5), 0 0 10px rgba(97,236,243,0.7), 0 0 5px rgba(97,236,243,0.9);
 }
 
 .content_tagline {
     font-family: 'Quicksand', sans-serif;
-    font-size: 11vh;
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    text-shadow: -20px 10px 40px rgba(0,0,0,0.1), -20px 10px 30px rgba(0,0,0,0.3), -20px 10px 20px rgba(0,0,0,0.5), -20px 10px 10px rgba(0,0,0,0.7), 0 0 40px rgba(97,236,243,0.1), 0 0 30px rgba(97,236,243,0.3), 0 0 20px rgba(97,236,243,0.5), 0 0 10px rgba(97,236,243,0.7), 0 0 5px rgba(97,236,243,0.9);
+}
+
+.content_tray {
+    padding-top: 5vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.content_picture {
+    width: auto;
+    max-width: 30%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(97,236,243,0.9))
+}
+
+.content_picture img {
+    max-width: 100%;
+    clip-path: polygon(0 0, 95% 5%, 60% 100%);
+    /* box-shadow: -5px 5px 20px rgba(256,256,256,0.5); */
+}
+
+.content_blurb {
+    max-width: 70%;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+}
+
+.blurb1 {
+    font-size: 36px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.blurb2 {
+    padding-top: 10px;
+    font-size: 24px;
+    font-family: 'Heroic_Condensed', sans-serif;
 }
 
 /* SKILLS */
 
 .skills {
-
+    padding-top: 100vh;
 }
 
 .skill_header {
@@ -184,13 +236,12 @@ table {
     /* background-color: black; */
     background-image: url("assets/shapes/Top.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    position: sticky;
+    background-size: contain;
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 100vw;
     height: 100vh;
-    position: ;
 
 }
 
