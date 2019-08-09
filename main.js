@@ -22,10 +22,10 @@ for (var i = 0; i < 10; i++) {
         p = [...Array(4)].map(x => getRandomTriangle());
 
     for (var j = 0; j < 4; j++) {
-        t1 = 1.0-(y1[j]<50?(y1[j]/50.0):((y1[j]-100.0)/-50.0));
-        t2 = 1.0-(y2[j]<50?(y2[j]/50.0):((y2[j]-100.0)/-50.0));
-        console.log(`t: ${t1} => y: ${y1[j]}`);
-        console.log(`t: ${t2} => y: ${y2[j]}`);
+        t1 = 1.0-(y1[j]<=50?(y1[j]/50.0):((y1[j]-100.0)/-50.0));
+        t2 = 1.0-(y2[j]<=50?(y2[j]/50.0):((y2[j]-100.0)/-50.0));
+        // console.log(`t: ${t1} => y: ${y1[j]}`);
+        // console.log(`t: ${t2} => y: ${y2[j]}`);
         var insert1 = `<div style="border:1px solid rgba(255,255,255${t1}); position:absolute;${bt[j] ? 'bottom' : 'top'}: ${x1[j]}%;${lr[j] ? 'left' : 'right'}: ${y1[j]}%;"><div style="width:${50*s[j]+100}px;height:${50*s[j]+100}px;background:linear-gradient(${deg[j]}deg,rgba(${c[j][0]}${t1}),rgba(${c[j][1]}${t1}));clip-path:polygon(${p[j][0]}% ${p[j][1]}%, ${p[j][2]}% ${p[j][3]}%, ${p[j][4]}% ${p[j][5]}%);position:absolute;${bt[j] ? 'bottom' : 'top'}: ${x1[j]}%;${lr[j] ? 'left' : 'right'}: ${y1[j]}%;"></div></div>`;
         var insert2 = `<div style="border:1px solid rgba(255,255,255${t2}); position:absolute;${bt[j] ? 'bottom' : 'top'}: ${x2[j]}%;${lr[j] ? 'left' : 'right'}: ${y2[j]}%;"><div style="width:${50*s[j]+100}px;height:${50*s[j]+100}px;background:linear-gradient(${deg[j]}deg,rgba(${c[j][0]}${t2}),rgba(${c[j][1]}${t2}));clip-path:polygon(${p[j][0]}% ${p[j][1]}%, ${p[j][2]}% ${p[j][3]}%, ${p[j][4]}% ${p[j][5]}%);position:absolute;${bt[j] ? 'bottom' : 'top'}: ${x2[j]}%;${lr[j] ? 'left' : 'right'}: ${y2[j]}%;"></div></div>`;
         // console.log(insert1);
